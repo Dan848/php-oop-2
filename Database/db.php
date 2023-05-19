@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . '/../Models/Product.php';
+include __DIR__ . '/../Traits/Quantity.php';
 include __DIR__ . '/../Models/Equipm.php';
 include __DIR__ . '/../Models/Food.php';
 include __DIR__ . '/../Models/Toy.php';
@@ -12,7 +13,7 @@ $products = [
         "https://i.pinimg.com/originals/8f/88/a5/8f88a50f12ea6ef4e116dc74b9643e12.jpg",
         "dog",
         "Cibo",
-        "3KG"
+        3,"KG"
     ),
     new Equimp(
         2,
@@ -48,7 +49,7 @@ $products = [
         "https://i.pinimg.com/originals/8f/88/a5/8f88a50f12ea6ef4e116dc74b9643e12.jpg",
         "cat",
         "Cibo",
-        "7L"
+        "",""
     ),
     new Toy(
         6,
